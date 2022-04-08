@@ -1,0 +1,11 @@
+In safety, reliability as well as risk analysis and management, infor-
+mation often is uncertain and imprecise. The approach to air incident analysis
+under uncertain and imprecise information presented in our paper is inspired by
+the possibility theory. Notably, in such analyses these are both: static and dy-
+namic components that have to be included. As part of this work, static analysis
+of a serious incident has been performed. In order to do this, probability scale
+which is based on fuzzy set theory has been given. The scenarios of transforma-
+tion of incident into accident have been found and their fuzzy probabilities have
+been calculated. Finally, it has been shown that elimination of one of premises
+for transformation of the incident into accident significantly reduces the possi-
+bility of this transformation.

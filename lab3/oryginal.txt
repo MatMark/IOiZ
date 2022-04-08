@@ -1,0 +1,88 @@
+Air communication is commonly thought as the most safe transport type. Because
+passenger safety is the main priority of all subjects engaged in air transport, technical,
+organization, procedure barriers are established in order to avoid air accidents. Some-
+times these facilities fail; in most cases because of human error. To learn lessons from
+these failures, accidents are investigated in order to find their causes. Such investiga-
+tion is usually qualitative [8].
+In the paper, a quantitative analysis of serious incidents is proposed. The "serious
+incident" is usually a very dangerous event when some barriers against accident have
+failed to meet their goal. They are very important sources of knowledge about safety
+assurance systems in air transport. We want to estimate the probability that a given
+incident would transform into accident. With that kind of study at disposal, one can
+conclude whether safety facilities are sufficient or have to be extended. In order to
+evaluate this probability, estimation of safety barrier reliability has to be carried out.
+Unfortunately, in most cases there are no sufficient data to infer statistically about the
+frequency of events for the accident scenario. Unfortunately, it is highly unlikely to
+find that data. There are two reasons of such situation. First is that some of these
+events occur very rarely, and additionally, in past the events without significant con-
+sequences were not usually recorded. The second one is human factor with suchmeasures that are difficult to evaluate as different reactions probabilities and error
+activity probability. Such measures are charged with uncertainty and subjective esti-
+mations. Only methods to obtain such knowledge are expert estimates. These estima-
+tions are not precise and not sufficient to probabilistic analysis.
+In safety, reliability, and risk analysis and management, information often is uncer-
+tain and imprecise. In book [10] three approaches to reliability and safety with uncer-
+tain and imprecise information are presented: probability and statistics, fuzzy set
+theory, possibility theory (inspired by the above).
+In paper [1] the following approaches for representation of uncertainty are listed:
+probability, imprecise (interval) probability, probability bound analysis, possibility
+theory (foundations: probability, statistics, fuzzy sets), Dempster-Shafer evidence
+theory.
+The approach to air incident analysis presented in our paper is inspired by the pos-
+sibility theory.
+In air incident analysis both types of components have to be included: static and
+dynamic. Static analysis can be executed by means of fault trees with fuzzy probabili-
+ties [16, 17] and event trees with fuzzy probabilities [7]. Fuzzy probability is called
+possibility. The Dynamic analysis is executed in the time domain. More precisely, the
+analysis may be carried out using minimal and maximal values of time parameters
+similarly to the safety study of some railroad crossing in [9]. The other approach is
+probabilistic when time parameters are represented by probability distributions as in
+[2] where time coordination of distance protections in high voltage power transmis-
+sion line was considered. The next kind of analysis will be based upon fuzzy set and
+will become the topic of the paper.
+In this paper, the serious incident which occurred at the Chopin airport in Warsaw
+in 2007 year would be analyzed. Only static analysis will be executed, while dynamic
+one will be the topic of the following paper. In order to find the probability that given
+incident would transform into accident, the analysis of event trees by fuzzy probabili-
+ties will be performed. An analysis of incidents using fuzzy inference is illustrated with the example of a
+serious air traffic incident which occurred in August 2007 at the Warsaw Chopin air-
+port between Boeing 767 and Boeing 737 aircraft. Its cause was classified as a "hu-
+man factor" and the causal group H4 – "procedural errors" [18]. In the incident on 13th of August 2007 participated two aircraft – Boeing 737 (B737)
+and the Boeing 767 (B767), which more or less at the same time were scheduled for
+take-off from the Warsaw Chopin airport. As the first, clearance for line-up and wait
+on runway 29 was issued to B737. As a second, clearance for line-up and wait on
+runway 33 was given to the B767 crew. The latter aircraft was the first to obtain per-
+mission to take-off. A moment after confirmation of permission to take-off, both air-
+crafts began the start procedure at the same time. The B737 crew wrongly assumedthat the start permission was addressed to them. They probably thought that since they
+had received the permission to line up the runway first, they would be also the first to
+be permitted to start. In addition, the categories of wake turbulence caused that from
+the traffic efficiency point of view, it would be better to start B737 before B767. De-
+cision of the controller, however, was different. The air traffic controller (ATC) did
+not watch the planes taking-off, because at this time he was busy agreeing a helicopter
+take-off. The situation of simultaneous start was, nevertheless, observed by the pilot
+of ATR 72, who was waiting in the queue for departure. He reacted over the radio.
+After this message, B767 pilot looked right and saw B737 taking-off. Then, on his
+own initiative, braked off and began a rapid deceleration, which led to stopping the
+plane 200 meters from the intersection of the runways. The assistant controller heard
+the ATR 72 pilot radio message and informed the controller that B737 operated with-
+out authorization. The controller, who originally did not hear the information on the
+radio, after 16 seconds from the start, recognized the situation and strongly ordered
+B737 to discontinue the take-off procedure. The B737 crew performed braking and
+stopped 200 m from the intersection of the runways. In the presented example it can be noticed that it is sufficient to impose only one addi-
+tional risk factor (or a combination of two factors), and the incident would become, in
+fact, an accident. There are several premises conducive for an accident [15].
+1. Weather conditions (visibility) are so bad that it is impossible to see the actual traf-
+fic situation. This applies to B767, ATR 72 crews, and the air traffic controller.
+2. ATR 72 pilot does not watch the situation on the runways, just waiting for permis-
+sion to line-up the runway.
+3. ATR 72 pilot observes the situation, but does not immediately inform about it on
+the radio, instead he discusses it with other members of his own crew.
+4. B767 crew, busy with their own take-off procedure, does not pay attention to the
+message transmitted over the radio by the ATR 72 pilot.
+5. B767 crew takes a wrong decision to continue the take-off, despite noting B737
+aircraft. Such decision could arise, for example, with this reasoning: "there is no
+possibility to stop before the intersection, let B737 stop - after all, we have a per-
+mission to start, maybe we can pass the intersection before the B737", etc.
+6. Assistant controller does not pay attention to the information given by radio by the
+ATR 72 pilot, or does not respond to it properly - does not inform the controller.
+7. B737 crew does not react properly to the air traffic controller command and does
+not interrupt the take-off procedure.

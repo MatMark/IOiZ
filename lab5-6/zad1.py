@@ -53,7 +53,7 @@ print("-----------------------------------\Centroidy\n", centers)
 
 plt.plot(line_4, line_0, c='grey')
 plt.plot(line_0, line_4, c='grey')
-plt.scatter(centers[0, 0], centers[0, 1], c='y', s=1500, alpha=0.5)
+plt.scatter(centers[0, 0], centers[0, 1], c='violet', s=1500, alpha=0.5)
 plt.scatter(centers[1, 0], centers[1, 1], c='pink', s=1500, alpha=0.5)
 plt.plot(x_space, y_space, c='b', linestyle='dashed', linewidth=0.75,
          label='Kierunek zgodny z wektorem cechy')

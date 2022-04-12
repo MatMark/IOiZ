@@ -81,4 +81,5 @@ plt.plot(number_clusters, wcss)
 plt.title('Elbow Method')
 plt.xlabel('Liczba klastrów')
 plt.ylabel('WCSS')  # Within-Cluster Sum of Square
+# WCSS is the sum of squared distance between each point and the centroid in a cluster
 plt.show()

@@ -25,9 +25,9 @@ image_shape = (64, 64)
 
 J = 30
 
-centered = np.empty([10, n_features])
+centered = np.empty([n_samples, n_features])
 
-for i in range(0, 10):
+for i in range(0, n_samples):
     temp_mean = np.mean(data[i], 0)
     temp = data[i] - temp_mean
     centered[i] = temp

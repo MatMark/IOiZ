@@ -18,21 +18,21 @@ bounds_ackley <- getDefaultBounds("Ackleys")
 # mut_probability = 0.1,
 # elite_population = 2
 
-config_name <- "Elite_population"
-config_values <- c(0, 1, 2, 4, 8)
+config_name <- "Best"
+config_values <- c(0)
 config <- list()
-for (i in seq_len(config_values)) {
+for (i in seq_len(length(config_values))) {
     config[[i]] <- c(
-        population = 50,
-        iterations = 1000,
-        cross_probability = 0.8,
-        mut_probability = 0.1,
-        elite_population = config_values[i]
+        population = 25,
+        iterations = 2000,
+        cross_probability = 0.7,
+        mut_probability = 0.05,
+        elite_population = 8
     )
 }
 
 global_avg_results <- c()
-for (param in seq_len(config_values)) {
+for (param in seq_len(length(config_values))) {
     results <- c()
     for (i in 1:10) {
         genetic <- ga(

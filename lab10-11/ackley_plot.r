@@ -2,13 +2,13 @@ require("plotly")
 
 source("lab10-11/ackley.r")
 
-show_plot <- function() {
-    x <- seq(-35, 30, by = 0.1)
-    y <- seq(-35, 30, by = 0.1)
-    z <- array(0, dim = c(651, 651))
-    for (i in 1:651) {
-        for (j in 1:651) {
-            z[i, j] <- ackley(c(x[i], x[j]))
+show_3d_plot <- function() {
+    x <- seq(-10, 10, by = 0.1)
+    y <- seq(-10, 10, by = 0.1)
+    z <- array(0, dim = c(length(x), length(y)))
+    for (i in 1:length(x)) {
+        for (j in 1:length(y)) {
+            z[i, j] <- ackley(c(x[i], y[j]))
         }
     }
 
@@ -29,3 +29,5 @@ show_plot <- function() {
     fig <- fig %>% layout()
     print(fig)
 }
+
+show_3d_plot()

@@ -2,13 +2,13 @@ require("plotly")
 
 source("lab10-11/rosen.r")
 
-show_plot <- function() {
-    x <- seq(-40, 30, by = 0.1)
-    y <- seq(-40, 30, by = 0.1)
-    z <- array(0, dim = c(701, 701))
-    for (i in 1:701) {
-        for (j in 1:701) {
-            z[i, j] <- rosen(c(x[i], x[j]))
+show_3d_plot <- function() {
+    x <- seq(-10, 10, by = 0.1)
+    y <- seq(-10, 10, by = 0.1)
+    z <- array(0, dim = c(length(x), length(y)))
+    for (i in 1:length(x)) {
+        for (j in 1:length(y)) {
+            z[i, j] <- rosen(c(x[i], y[j]))
         }
     }
 
@@ -29,3 +29,5 @@ show_plot <- function() {
     fig <- fig %>% layout()
     print(fig)
 }
+
+show_3d_plot()

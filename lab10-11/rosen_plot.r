@@ -48,7 +48,7 @@ show_heatmap <- function() {
         z = ~z
     ) %>%
         add_trace(0,
-            x = 0, y = 0, z = 0, mode = "markers", type = "scatter",
+            x = 1, y = 1, z = 0, mode = "markers", type = "scatter",
             marker = list(size = 10, color = "white", symbol = "x")
         )
 
@@ -74,7 +74,7 @@ show_contour <- function() {
         z = ~z
     ) %>%
         add_trace(0,
-            x = 0, y = 0, z = 0, mode = "markers", type = "scatter",
+            x = 1, y = 1, z = 0, mode = "markers", type = "scatter",
             marker = list(size = 10, color = "white", symbol = "x")
         )
 

@@ -32,7 +32,7 @@ for (i in seq_len(length(x))) {
     }
 }
 fig <- plot_ly(
-    type = "contour",
+    type = "heatmap",
     colorscale = "Jet",
     x = ~x,
     y = ~y,

@@ -1,4 +1,4 @@
-source("lab12-14/ackley.r")
+source("lab12-14/a/ackley.r")
 # zamienia ze soba x jednego z rodzicow z y drugiego rodzica
 # (wymiana x z x lub y z y miedzy rodzicami nie ma wplywu na ta funkcje)
 # np.

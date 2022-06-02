@@ -1,10 +1,10 @@
 require("GA")
 require("globalOptTests")
 
-source("lab12-14/ackley.r")
-source("lab12-14/selection.r")
-source("lab12-14/crossover.r")
-source("lab12-14/mutation.r")
+source("lab12-14/a/ackley.r")
+source("lab12-14/a/selection.r")
+source("lab12-14/a/crossover.r")
+source("lab12-14/a/mutation.r")
 
 opt_ackley <- getGlobalOpt("Ackleys")
 # bounds_ackley <- getDefaultBounds("Ackleys")
@@ -62,8 +62,8 @@ for (param in seq_len(length(config_values))) {
             pcrossover = config[[param]]["cross_probability"],
             pmutation = config[[param]]["mut_probability"],
             elitism = config[[param]]["elite_population"],
-            selection = tournament_selection,
-            crossover = crossover_function,
+            # selection = tournament_selection
+            # crossover = crossover_function
             mutation = mutation_function
         )
         # summary(genetic)
@@ -92,7 +92,7 @@ df <- data.frame(
 )
 write.csv(
     df,
-    paste("lab12-14/ackley_results_functions/", config_name, ".csv", sep = ""),
+    paste("lab12-14/a/ackley_results_functions/", config_name, ".csv", sep = ""),
     row.names = TRUE
 )
 df <- data.frame(
@@ -102,6 +102,6 @@ df <- data.frame(
 )
 write.csv(
     df,
-    paste("lab12-14/ackley_results_functions/", config_name, "_solutions.csv", sep = ""),
+    paste("lab12-14/a/ackley_results_functions/", config_name, "_solutions.csv", sep = ""),
     row.names = TRUE
 )

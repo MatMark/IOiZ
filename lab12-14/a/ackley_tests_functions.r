@@ -35,7 +35,7 @@ names(bounds_ackley) <- c("lower", "upper")
 # elite_population = c(0, 1, 2, 4, 8)
 
 config_name <- "Cross_probability"
-config_values <- c(0.8)
+config_values <- c(0.65, 0.7, 0.8, 0.9, 0.95)
 config <- list()
 for (i in seq_len(length(config_values))) {
     config[[i]] <- c(
@@ -53,7 +53,7 @@ global_solutions_y <- c()
 global_solutions_z <- c()
 for (param in seq_len(length(config_values))) {
     results <- c()
-    for (i in 1:1) {
+    for (i in 1:10) {
         genetic <- ga(
             type = "real-valued", fitnes = function(x) -ackley(x),
             lower = bounds_ackley$lower, upper = bounds_ackley$upper,

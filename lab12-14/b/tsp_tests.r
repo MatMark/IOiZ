@@ -2,13 +2,14 @@ require("GA")
 require("TSP")
 source("lab12-14/b/fitnes.r")
 
-filename <- "berlin52"
+filename <- "eil76"
 file_path <- paste("lab12-14/b/", filename, ".tsp", sep = "")
-tsp <- read_TSPLIB(file(file_path))
+file <- file(file_path)
+tsp <- read_TSPLIB(file)
 distance_matrix <- as.matrix(dist(tsp, method = "euclidean"))
 size <- max(dim(distance_matrix))
 
-opt <- 7544
+opt <- 545
 config_name <- "Cross_probability"
 config_values <- c(0.65, 0.7, 0.8, 0.9, 0.95)
 config <- list()

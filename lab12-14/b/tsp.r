@@ -4,7 +4,8 @@ source("lab12-14/b/fitnes.r")
 
 filename <- "eil76"
 file_path <- paste("lab12-14/b/", filename, ".tsp", sep = "")
-tsp <- read_TSPLIB(file(file_path))
+file <- file(file_path)
+tsp <- read_TSPLIB(file)
 distance_matrix <- as.matrix(dist(tsp, method = "euclidean"))
 size <- max(dim(distance_matrix))
 

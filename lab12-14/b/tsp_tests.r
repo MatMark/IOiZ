@@ -2,22 +2,31 @@ require("GA")
 require("TSP")
 source("lab12-14/b/fitnes.r")
 
-filename <- "eil76"
+# filename <- "eil76"
+filename <- "berlin52"
 file_path <- paste("lab12-14/b/", filename, ".tsp", sep = "")
 file <- file(file_path)
 tsp <- read_TSPLIB(file)
 distance_matrix <- as.matrix(dist(tsp, method = "euclidean"))
 size <- max(dim(distance_matrix))
 
-opt <- 545
-config_name <- "Cross_probability"
-config_values <- c(0.65, 0.7, 0.8, 0.9, 0.95)
+# default:
+# population = 50,
+# iterations = 1000,
+# cross_probability = 0.8,
+# mut_probability = 0.2,
+# elite_population = 8
+
+# opt <- 545
+opt <- 7544
+config_name <- "Iterations"
+config_values <- c(250, 500, 1000, 2000, 3000)
 config <- list()
 for (i in seq_len(length(config_values))) {
     config[[i]] <- c(
         population = 50,
-        iterations = 1000,
-        cross_probability = config_values[i],
+        iterations = config_values[i],
+        cross_probability = 0.8,
         mut_probability = 0.2,
         elite_population = 8
     )

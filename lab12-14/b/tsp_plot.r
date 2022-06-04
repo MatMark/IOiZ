@@ -1,6 +1,7 @@
 library(plotly)
 
 filename <- "eil76"
+title <- paste("Ścieżka optymalna dla", filename)
 file_path <- paste("lab12-14/b/", filename, ".csv", sep = "")
 
 result_filename <- "opt_eil76_545_solutions"
@@ -27,7 +28,7 @@ fig <- fig %>% add_markers()
 fig <- fig %>% add_text(textposition = "top right")
 fig <- fig %>% add_trace(x = ~result_X, y = ~result_Y, name = "Trasa", mode = "lines", line = list(color = "black", width = 0.5, dash = "dash"))
 fig <- fig %>% layout(
-    title = "Miasta",
+    title = title,
     xaxis = list(title = "X"),
     yaxis = list(title = "Y"),
     showlegend = FALSE

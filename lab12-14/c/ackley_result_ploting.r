@@ -2,6 +2,7 @@ require("plotly")
 
 source("lab12-14/c/ackley.r")
 
+title <- "Porównanie metod"
 filename <- "Method"
 x_title <- "Metody"
 y_title <- "Średnia odleglosc od minimum globalnego"
@@ -68,6 +69,7 @@ fig <- plot_ly(data,
     textposition = "outside"
 ) %>%
     layout(
+        title = title,
         plot_bgcolor = "#e5ecf6",
         xaxis = list(
             autotypenumbers = "strict",

@@ -56,7 +56,7 @@ df <- data.frame(
 )
 write.csv(
     df,
-    paste("lab12-14/a/ackley_results_functions/", config_name, ".csv", sep = ""),
+    paste("lab12-14/a/ackley_results/", config_name, ".csv", sep = ""),
     row.names = TRUE
 )
 df <- data.frame(
@@ -66,6 +66,6 @@ df <- data.frame(
 )
 write.csv(
     df,
-    paste("lab12-14/a/ackley_results_functions/", config_name, "_solutions.csv", sep = ""),
+    paste("lab12-14/a/ackley_results/", config_name, "_solutions.csv", sep = ""),
     row.names = TRUE
 )

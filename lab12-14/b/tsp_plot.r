@@ -3,7 +3,7 @@ library(plotly)
 filename <- "eil76"
 file_path <- paste("lab12-14/b/", filename, ".csv", sep = "")
 
-result_filename <- "eil76_681_solutions"
+result_filename <- "opt_eil76_545_solutions"
 result_file_path <- paste("lab12-14/b/tsp_results/", result_filename, ".csv", sep = "")
 
 df <- read.csv(file_path, header = FALSE)

@@ -5,7 +5,7 @@ title <- "Porównanie funkcji selekcji dla różnych populacji"
 # filename <- "Crossover"
 filename <- "Population"
 x_title <- "Populacja"
-y_title <- "Średnia odleglosc od minimum globalnego"
+y_title <- "Uśredniona odległość od minimum globalnego"
 # Obie funkcje mają minimum w 0 więc wynik jest jednocześnie odległością
 
 

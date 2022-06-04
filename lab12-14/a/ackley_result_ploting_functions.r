@@ -10,7 +10,7 @@ df <- list.files(path = ".", pattern = "*.csv") %>%
 # wszystkie wartosci domyslne
 title <- "Porównanie funkcji kombinacji własnych funkcji"
 x_title <- "Kombinacja własnych funkcji"
-y_title <- "Średnia odleglosc od minimum globalnego"
+y_title <- "Uśredniona odleglosc od minimum globalnego"
 # # Obie funkcje mają minimum w 0 więc wynik jest jednocześnie odległością
 
 x <- paste(df[["config_name"]])
